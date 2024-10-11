@@ -5,11 +5,11 @@ import { Spotlight } from "@/components/ui/Spotlight";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div className="text-center">
+    <div className="flex flex-col items-center justify-center">
+      <div className="text-center relative">
         <Spotlight
           fill="white"
-          className="-top-40 left-0 md:left-60 md:-top-20 h-screen"
+          className="absolute -top-60 left-0 md:left-20 md:-top-52 h-screen"
         />
         <h1 className="text-6xl pb-2 md:pb-4 lg:text-8xl 2xl:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-600">
           Evolve
@@ -24,21 +24,25 @@ const Hero = () => {
             href="/"
             variant="link"
             rel="noopener noreferrer"
+            className="group max-md:order-2 inline-flex items-center"
             title="Explore the journey of life"
-            className="group max-md:order-2"
           >
-            <Globe size="1rem" className="mr-2 shrink-0" />
-            Explore
+            <span className="inline-flex items-center">
+              <Globe size={16} className="mr-1.5 shrink-0" />
+              Explore
+            </span>
           </Link>
 
           <Link
             href="/blog"
-            title="Blog about Evolution"
             variant="link"
-            className="group"
+            className="group inline-flex items-center"
+            title="Blog about Evolution"
           >
-            <Pen size="0.975rem" className="mr-2 shrink-0" />
-            Blog
+            <span className="inline-flex items-center">
+              <Pen size={16} className="mr-1.5 shrink-0" />
+              Blog
+            </span>
           </Link>
         </div>
       </div>
