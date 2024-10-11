@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-2 text-neutral-300">
           <Link
             href="/"
-            variant="link"
+            variant="secondary"
             rel="noopener noreferrer"
             className="group max-md:order-2 inline-flex items-center"
             title="Explore the journey of life"
@@ -35,7 +35,7 @@ const Hero = () => {
 
           <Link
             href="/blog"
-            variant="link"
+            variant="ghost"
             className="group inline-flex items-center"
             title="Blog about Evolution"
           >
