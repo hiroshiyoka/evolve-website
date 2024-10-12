@@ -4,6 +4,15 @@ import Image from "next/image";
 const Resume = () => {
   return (
     <div className="w-full max-w-5xl mx-auto">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold text-neutral-100 mb-4">
+          Understanding Evolution
+        </h2>
+        <p className="text-lg text-neutral-400 max-w-3xl mx-auto">
+          Dive deeper into the fascinating journey of evolution, from the
+          earliest life forms to the diversity of species today.
+        </p>
+      </div>
       <Translusent className="grid gap-6 lg:grid-cols-3 items-start group">
         {/* Card 1 */}
         <TranslusentCard>
